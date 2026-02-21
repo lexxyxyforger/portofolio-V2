@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Nightfall",
+  name: "Alexandro Francisco",
   role: "Fullstack Web Developer",
   tagline: "Membangun aplikasi web yang cepat, responsif, dan fungsional.",
   bio: "Fullstack Web Developer dari Indonesia dengan fokus pada pengembangan antarmuka modern dan performa aplikasi. Berpengalaman menggunakan React, Next.js, dan Tailwind CSS untuk membangun UI yang responsif dan efisien. Saat ini sedang memperdalam pengembangan backend, API, dan basis data menggunakan Node.js dan Golang untuk membangun aplikasi end to end.",
