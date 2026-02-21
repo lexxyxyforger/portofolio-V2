@@ -18,7 +18,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Arya Kusuma — Developer & Designer",
+  title: "Alexandro Francisco — Fullstack Developer",
   description: "Full-stack developer crafting minimal, purposeful digital experiences.",
   authors: [{ name: "Arya Kusuma" }],
 };

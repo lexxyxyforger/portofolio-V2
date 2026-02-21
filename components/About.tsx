@@ -11,9 +11,9 @@ const skills = [
 ];
 
 const experience = [
-  { company: "Startup XYZ", role: "Frontend Engineer Intern", period: "2024", desc: "Built dashboard UI from scratch, shipped 3 features to prod." },
-  { company: "Freelance", role: "Fullstack Dev", period: "2023–now", desc: "Worked with 10+ clients on landing pages, SaaS MVPs, and e-commerce." },
-  { company: "Open Source", role: "Contributor", period: "2022–now", desc: "PRs merged on several community React projects and UI libs." },
+  { company: "Startup XYZ", role: "Frontend Engineer Intern", period: "2024", desc: "Membangun antarmuka dasbor dari awal dan merilis 3 fitur ke lingkungan produksi." },
+  { company: "Freelance", role: "Fullstack Developer", period: "2023–kini", desc: "Berkolaborasi dengan 10+ klien untuk membangun landing page, MVP SaaS, dan platform e-commerce." },
+  { company: "Open Source", role: "Kontributor", period: "2022–kini", desc: "Kontribusi pull request pada beberapa proyek React dan pustaka UI komunitas." },
 ];
 
 function useReveal(threshold = 0.12) {
@@ -314,6 +314,11 @@ export default function About() {
           animation: pulse-dot 2s ease-in-out infinite;
         }
 
+        @keyframes pulse-dot {
+          0%, 100% { opacity: 1; transform: scale(1); }
+          50% { opacity: 0.4; transform: scale(0.8); }
+        }
+
         .avail-title {
           font-family: var(--display);
           font-weight: 800;
@@ -397,10 +402,10 @@ export default function About() {
           animate={titleInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         >
-          <div className="about-section-tag">02 / About</div>
+          <div className="about-section-tag">02 / Tentang</div>
           <h2 className="about-title">
-            Who I
-            <span className="about-title-ghost"> Am.</span>
+            Siapa
+            <span className="about-title-ghost"> Saya.</span>
           </h2>
         </motion.div>
 
@@ -412,18 +417,18 @@ export default function About() {
               animate={leftInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             >
-              <div className="acard-label">Profile</div>
+              <div className="acard-label">Profil</div>
               <p className="bio-text">
-                Gw <span className="bio-highlight">Full-Stack Developer</span> based in Jakarta yang obsess sama clean code, great DX, dan UI yang beneran berasa hidup.
+                Seorang <span className="bio-highlight">Full-Stack Developer</span> yang berbasis di Jakarta, dengan fokus pada pengembangan produk digital yang fungsional, performatif, dan memiliki pengalaman pengguna yang bermakna.
               </p>
               <p className="bio-text" style={{ marginTop: "12px" }}>
-                Mahasiswa yang nggak bisa pisah dari terminal, figma, dan kopi ☕. When I&apos;m not shipping — I&apos;m sketching, hiking, atau ngedown rabbit hole soal type design.
+                Saat ini menempuh pendidikan tinggi sembari aktif membangun dan merilis produk nyata. Percaya bahwa kode yang baik bukan hanya yang berjalan — melainkan yang mudah dipahami, dipelihara, dan dirasakan perbedaannya oleh pengguna.
               </p>
               <div className="stat-row">
                 {[
-                  { num: "10", suffix: "+", label: "Clients" },
-                  { num: "2", suffix: "+", label: "Years" },
-                  { num: "30", suffix: "+", label: "Projects" },
+                  { num: "10", suffix: "+", label: "Klien" },
+                  { num: "2", suffix: "+", label: "Tahun" },
+                  { num: "30", suffix: "+", label: "Proyek" },
                 ].map((s, i) => (
                   <motion.div
                     key={s.label}
@@ -445,7 +450,7 @@ export default function About() {
               animate={leftInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
             >
-              <div className="acard-label">Experience</div>
+              <div className="acard-label">Pengalaman</div>
               {experience.map((exp, i) => (
                 <motion.div
                   key={i}
@@ -502,11 +507,11 @@ export default function About() {
             >
               <div className="avail-badge">
                 <span className="avail-dot" />
-                Available Now
+                Tersedia Sekarang
               </div>
-              <div className="avail-title">Let&apos;s build something sick 🔥</div>
+              <div className="avail-title">Mari wujudkan ide Anda 🚀</div>
               <p className="avail-body">
-                Open for full-time, freelance, dan kolaborasi project. Reach out dan cerita idenya!
+                Terbuka untuk kesempatan kerja penuh waktu, proyek lepas, maupun kolaborasi jangka panjang. Hubungi saya dan ceritakan visi Anda.
               </p>
               <a href={`mailto:${profile.email}`} className="avail-cta">
                 <span>
