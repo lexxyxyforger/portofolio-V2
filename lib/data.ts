@@ -70,7 +70,7 @@ export const projects = [
     id: "03",
     title: "Snipset code",
     category: "Web tool",
-    year: "2025",
+    year: "2026",
     description:
       "Aplikasi web untuk membuat dan menampilkan preview kode secara live dengan tampilan estetis. Cocok untuk sharing snippet ke media sosial atau dokumentasi.",
     tags: ["React", "Tailwind", "Framer Motion"],

@@ -7,7 +7,7 @@ import { profile } from "@/lib/data";
 const skills = [
   { category: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion"] },
   { category: "Backend", items: ["Node.js", "PostgreSQL", "Prisma", "Redis", "REST & GraphQL"] },
-  { category: "Tools & Vibes", items: ["Figma", "Git", "Docker", "Vercel", "VS Code"] },
+  { category: "Tools & Vibes", items: ["MySQL", "Git", "Docker", "Vercel", "VS Code"] },
 ];
 
 const experience = [

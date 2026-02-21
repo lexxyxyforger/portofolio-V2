@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { profile, socials } from "@/lib/data";
 
-const ROLES = ["Developer", "Designer", "Builder", "Creator"];
+const ROLES = ["Fullstack", "Designer", "Builder", "Creator"];
 
 function useTypewriter(words: string[], speed = 80, pause = 1800) {
   const [display, setDisplay] = useState("");
