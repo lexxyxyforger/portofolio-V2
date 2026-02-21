@@ -404,8 +404,8 @@ export default function About() {
         >
           <div className="about-section-tag">02 / Tentang</div>
           <h2 className="about-title">
-            Siapa
-            <span className="about-title-ghost"> Saya.</span>
+            Who
+            <span className="about-title-ghost"> Am I.</span>
           </h2>
         </motion.div>
 
